@@ -1,0 +1,146 @@
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    background: #212529;
+    filter: drop-shadow(0px 20px 20px);
+}
+
+#div2-1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2-1 img{
+    border: 3px solid orange;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: mover 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes mover{
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.div2-2 {
+    display: grid;
+    margin-right: 30%;
+
+}
+
+.div2 h1{
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    justify-content: left;
+}
+
+.div2 h1 p{
+    font-size: 40px;
+    font-family: 'Combo', cursive;
+    font-weight: bold;
+}
+
+.div2 p{
+    font-size: 18px;
+    z-index: 1;
+    line-height: 24px;
+}
+
+.bola1{
+    background: linear-gradient(to right,#FC4A1A,#F7B733);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    z-index: 0;
+    transform: translate(-20px,8px);
+}
+
+.aparecer{
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.div2-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    width: 20%;
+    height: 120px;
+    bottom: 5%;
+    left: 14%;
+}
+
+.div2-3 div{
+    background: linear-gradient(to right,#FC4A1A,#F7B733);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: inset -7px 4px 17px 0px;
+    margin: 0 2%;
+}
+
+.ball1{
+    animation: mexer 2s infinite ease-out;
+}
+
+.ball2{
+    animation: mexer 2s infinite ease-out 0.25s;
+}
+
+.ball3{
+    animation: mexer 2s infinite ease-out 0.50s;
+}
+
+.ball4{
+    animation: mexer 2s infinite ease-out 0.75s;
+}
+
+@keyframes mexer{
+    50% {transform: translate(0,-40px);}
+    100% {transform: translate(0,0);}
+}
+
+
+
+.menu{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 80%;
+}
+
+.menuIcons img{
+    height: 60%;
+    width: 100%;
+}
+
+.menuIcons:hover{
+    cursor: pointer;
+    scale: 0.8;
+}

@@ -1,0 +1,97 @@
+.div3{
+    background: #27323E;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 20px 20px);
+}
+
+.div3-1{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.div3-1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 0;
+}
+
+.daDiv3{
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: -1;
+    left: -15%;
+}
+
+.div3-2{
+    max-height: 80%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.imagem3{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.div3-2 img{
+    width: 100%;    
+}
+
+.services{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.services h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services div{
+    cursor: pointer;
+    margin: 5% 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.services div:hover{
+    scale: 1.2;
+}
+
+.services svg{
+    scale: 0.8;
+}
+
+.showingServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.is{
+    max-width: 40%;
+}
+
+.showingServices p{
+    transition: all 0.2s;
+    font-weight: bold;
+    line-height: 24px;
+}
